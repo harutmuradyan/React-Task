@@ -1,0 +1,80 @@
+.menu {
+    position: fixed;
+    z-index: 1;
+    width:100%;
+    height: 50vw;
+    background-color:#040404;
+    transform: scale(0);
+    opacity: 0.8;  
+    .menu-content{
+        margin-top: 20px;
+        width: 20%;
+        .menu-user {
+            width: 80%;
+            display: flex;
+            margin: 0 auto;
+            .menu-user__btn {
+                display: flex;
+                border: none;
+                background-color:#040404;
+                cursor: pointer;
+                .menu-user__btn-img {
+                    margin: 25px 0px 25px 15px;
+                    background-color:grey;
+                    width: 45px;
+                    height: 45px;
+                    border-radius:50%;
+                }
+                .menu-user__btn-name {
+                    margin: 35px 0px 25px 15px;
+                    color:#f1f1f1;
+                    font-size: 20px;
+                }
+            }
+        }
+    
+        .menu-block{
+            width: 80%;
+            margin: 0 auto;
+            .menu-block__item {
+                display: flex;
+                margin: 10px 0px 10px 0px;
+                padding: 10px 30px 10px 20px;
+                cursor: pointer;
+                p {
+                    color:#f1f1f1;
+                    font-size: 20px;
+                    margin-left: 25px;
+                }
+    
+                &:hover {
+                    background-color:#3b486d;
+                    border-radius:15px
+                }
+            }
+        }
+        .menu-buttons {
+            padding-top: 0px;
+            margin-left: 20px;
+            width: 70%;
+            button {
+                margin: 5px 0px 5px 0px;
+                width: 100%;
+                text-align: left;
+                border: none;
+                margin-left: 30px;
+                background-color:#040404;
+                color:#3c3c3d;
+                z-index: 1;
+                font-size: 20px;
+                text-transform: uppercase;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.menu.active {
+    transform: scale(1);
+    transition: 3s;
+}

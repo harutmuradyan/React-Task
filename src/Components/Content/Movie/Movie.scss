@@ -1,0 +1,95 @@
+.movie {
+    background-image:url('FeaturedCoverImage.png');
+    background-repeat: repeat;
+    background-size: cover;
+    padding-top: 100px;
+    height: 38vw;   
+    .movie-title {
+        color: #858688;
+        text-transform: uppercase;
+        margin-left: 20px;
+    }
+    .movie-img {
+        width: 40%;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    .movie-name {
+        font-size: 35px;
+        color:#f1f1f1;
+        margin-left: 20px;
+        margin-top: 15px;
+    }
+    .movie-data {
+        display: flex;
+        margin-top: 20px;
+        margin-left: 20px;
+        p {
+            color: #eaeaea;
+            margin-right: 10px;
+        }
+    }
+    .movie-video {
+        width: 100%;
+        left:0px;
+        height: 50%;
+        position: fixed;
+        left: 120px;
+        display: none;
+        .movie-video__block {
+            display: flex;
+            justify-content: center;
+            width: 80%;
+            background-color:#040404;
+            border:solid 1px white;
+            height: 300px;
+            .video {
+                flex-basis: 90%;
+                height: 100%;
+                margin: 0 auto;
+                display: block;
+            }
+            .close {
+                flex-basis: 3%;
+                height: 25px;
+                background-color:#040404;
+                border:solid 1px white;
+                color: white;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .movie-video.active {
+        display: block;
+    }
+    .movie-desc {
+        width: 45%;
+        color:#eaeaea;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    .movie-buttons {
+        display: flex;
+        .movie-buttons__play {
+            background-color:#f1f1f1;
+            color:#040404;
+            border:none;
+            width: 15%;
+            border-radius:25px;
+            height: 50px;
+            margin: 20px 0px 20px 15px;
+            cursor: pointer;
+        }
+        .movie-buttons__more {
+            background-image: linear-gradient(#2225e6, #041778);
+            color:#f1f1f1;
+            border:none;
+            width: 15%;
+            border-radius:25px;
+            height: 50px;
+            margin: 20px 0px 20px 15px;
+            cursor: pointer;
+        }
+    }
+}

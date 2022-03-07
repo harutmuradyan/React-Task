@@ -1,0 +1,27 @@
+.sidebar {
+    background-color:#040404;
+    flex-basis: 5%;
+    min-height: 50vw;
+    padding-top:100px;
+    .sidebar-block{
+        .sidebar-block__item {
+            margin: 30px 30px 30px 30px;
+            cursor: pointer;
+            img {
+                width: 30px;
+                height: 30px;
+            }
+            &:hover {
+                background-color:#232a3f;
+                border-radius: 50%;
+                transform: scale(2);
+                img {
+                    padding: 9px;
+                }
+            }
+        }
+    }
+}
+.sidebar.close {
+    display: none;
+}

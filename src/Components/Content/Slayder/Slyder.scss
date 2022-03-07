@@ -1,0 +1,19 @@
+.slyder {
+    width: 100%;
+    .slyder-title {
+        color:#f1f1f1;
+    }
+    .slyder-block {
+        .slyder-block__bar {
+            display: flex;
+            .slyder-block__bar-item {
+                margin: 10px 10px 10px 10px;
+                flex-basis: 15%;
+                min-height: 200px;
+            }
+        }
+    }
+    .error {
+        display: none;
+    }
+}

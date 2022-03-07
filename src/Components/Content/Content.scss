@@ -1,0 +1,11 @@
+.content {
+    background-color:#040404;
+    flex-basis: 95%;
+    min-height: 50vw;
+    .error {
+        display: none;
+    }
+}
+.content.width {
+    flex-basis: 100%;
+}
